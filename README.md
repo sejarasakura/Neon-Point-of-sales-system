@@ -5,17 +5,16 @@
 2. select theme 
 3. Switch login staff/customer
 
-Customer login
---------------------------------
-Customer id : NU1104
-Customer password : Aa73218324
+Customer login<br>
+Customer id : NU1104<br>
+Customer password : Aa73218324<br>
 
-Staff Login
---------------------------------
-Admin ID: CM0002
-Admin Password: Aa73218324
+Staff Login<br>
+Admin ID: CM0002<br>
+Admin Password: Aa73218324<br>
 
-Product id: CW1001 ~ ?
+Product ID<br>
+Product id: CW1001 ~ CW1009
 
 ### Details
 1. Java source code at path "/src/" <Package>
