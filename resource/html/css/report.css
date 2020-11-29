@@ -1,0 +1,39 @@
+
+table{
+  border: 1px solid black;border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;    
+}
+.hidden, .hidden th td, .hidden th{
+  border: 0;
+}
+.header-table{
+    border-bottom: 1px solid #000;border-top: 1px solid #000;
+}
+.next-order{
+    border-top: 1px solid #000!;
+}
+.other-order-price, .other-order{
+    border-bottom: 3px solid #000!important;
+    border-bottom-style: solid!important;
+}
+.other-order-price-top{
+    border-top: 3px solid #000!important;
+    border-top-style: solid!important;
+}
+.other-order-price{
+  text-align: right;
+}
+p{
+    margin: 5px;
+}
+h1.style-less{
+    margin: 10px;
+}
+
+
+    border-bottom: 3px solid #000;border-top: 3px solid #000;

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <useful>
+        <id>1</id>
+        <query>SELECT * FROM CUSTOMER ORDER BY SUBSTRING(CUSTOMER_ID,3,7);</query>
+        <command>Customer Table</command>
+    </useful>
+    <useful>
+        <id>2</id>
+        <query>SELECT * FROM PRODUCT ORDER BY PRODUCT_ID;</query>
+        <command>Product Table</command>
+    </useful>
+    <useful>
+        <id>3</id>
+        <query>SELECT * FROM STAFF ORDER BY SUBSTRING(STAFF_ID,3,8);</query>
+        <command>Staff Table</command>
+    </useful>
+    <useful>
+        <id>4</id>
+        <query>SELECT O.ORDER_ID FROM ORDER_RECORD O WHERE NOT EXISTS ( SELECT P.ORDER_ID FROM PAYMENT P WHERE P.ORDER_ID = O.ORDER_ID );</query>
+        <command>Order not yet paid</command>
+    </useful>
+    <useful>
+        <id>5</id>
+        <query>SELECT TOP 20 DISTINCT O.product_id,SUM(O.UNIT_FINAL_PRICE * O.PRODUCT_QUANTITY) as total_price,SUM(O.PRODUCT_QUANTITY) as total_product_quantity FROM Order_record_detail O, Payment Pay, Order_record OD WHERE OD.order_id = Pay.order_id AND OD.order_id = O.order_id AND payment_date BETWEEN #8/1/2019# AND #8/15/2019# GROUP BY product_id ORDER BY total_product_quantity DESC;</query>
+        <command>Top 20 higher sales of the date range</command>
+    </useful>
+    <useful>
+        <id>6</id>
+        <query>SELECT * FROM STAFF;</query>
+        <command>Select All Staff</command>
+    </useful>
+    <useful>
+        <id>7</id>
+        <query>SELECT * FROM ORDER_RECORD;</query>
+        <command>Order table</command>
+    </useful>
+    <useful>
+        <id>8</id>
+        <query>SELECT * FROM PAYMENT;</query>
+        <command>Payment table</command>
+    </useful>
+    <useful>
+<id>9</id>
+<query>SELECT product_id,SUM(product_quantity) as sum_of_product FROM Order_record_detail GROUP BY product_id ORDER BY product_id</query>
+<command>Select The Total Order Product</command>
+</useful>
+<useful>
+<id>10</id>
+<query>SELECT * FROM ORDER_RECORD_DETAIL</query>
+<command>Order record detail</command>
+</useful>
+<useful>
+<id>11</id>
+<query>UPDATE ORDER_RECORD_DETAIL SET ORDER_ID ='OR00000177' WHERE ORDER_ID = 'null';</query>
+<command>Upadate Order Record</command>
+</useful>
+<last_tag>11</last_tag>
+</xml>

@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+<body style="margin: 25px 15px;width: 1080">
+<table style="border: 1px solid black;border-collapse: collapse;">
+  
+  <tr style="border: 0;" >
+    <th style="width:100px;border: 0;"></th>
+    <th style="width:180px;border: 0;"></th>
+    <th style="width:100px;border: 0;"></th>
+    <th style="width:100px;border: 0;"></th>
+    <th style="width:100px;border: 0;"></th>
+    <th style="width:100px;border: 0;"></th>
+    <th style="width:100px;border: 0;"></th>
+  </tr>
+  <tr style="border: 0;">
+    <td colspan=7 style="text-align: center;border: 0;">
+        <b>@report_type@ Of Sales Department - @report_title@ @des_date@</b>
+    </td>
+  <tr style="border-bottom: 1px solid #000;border-top: 1px solid #000;">
+    <td colspan=3 style="text-align: left;border: 0;">
+        <b><i>Report ID : @report_id@</i></b>
+    </td>
+    <td colspan=4 style="border: 0; text-align: right">
+        <p><i>@today_date@ Version 1.0</i></p>
+    </td>
+</tr>
+  <tr style="border: 0;">
+    <td colspan=7 style="text-align: center; margin: 10px;border: 0;">
+        <h1 style="margin:10px; font-size: 30pt;"><b>Neon - company</b></h1>
+        <p><i><u>@report_title@ of August</u></i></p>
+    </td>
+</tr>
+<tr class='foo' style="border-bottom: 1px solid #000;border-top: 1px solid #000;">
+    <td style="width:13.636363%;border: 0;"><b>@heading_1@</b></td>
+    <td style="width:18.181818%;border: 0;"><b>@heading_2@</b></td>
+    <td style="width:13.636363%;border: 0;"><b>@heading_3@</b></td>
+    <td style="width:13.636363%;border: 0;"><b>@heading_4@</b></td>
+    <td style="width:13.636363%;border: 0;"><b>@heading_5@</b></td>
+    <td style="width:13.636363%;border: 0;"><b>@heading_6@</b></td>
+    <td style="width:13.636363%;border: 0;"><b>@heading_7@</b></td>
+</tr>
+
+@content@
+
+</table>
+
+</body>
+</html>
